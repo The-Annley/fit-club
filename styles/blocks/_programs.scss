@@ -1,0 +1,36 @@
+.programs {
+  &__slide {
+    max-width: 350px;
+
+    &-name {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 45px;
+      color: var(--color-dark);
+    }
+
+    &-author {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 26px;
+      color: var(--color-dark);
+      margin-bottom: 10px;
+    }
+
+    &-description {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 26px;
+      color: var(--color-gray);
+      margin-bottom: 20px;
+    }
+
+    &-link {
+      font-weight: 400;
+      color: var(--color-blue);
+      column-gap: 10px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/vendor.scss">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer src="./js/main.js" type="module"></script>
+    <title>StayHealthy</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="#!" class="header__logo logo">
+          <img
+            src="./images/logo.svg"
+            alt="StayHealthy"
+            class="logo__image"
+            width="156"
+            height="36"
+            loading="lazy"
+          />
+        </a>
+        <nav class="header__menu hidden-mobile">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Program</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Nutritions</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">Pricing</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#!" class="header__menu-link">About</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#!" class="header__button button hidden-mobile" type="button"
+          >Join now</a
+        >
+        <button
+          class="header__burger-button burger-button visible-mobile"
+          type="button"
+          onclick="mobileOverlay.showModal()"
+        >
+          <span class="visually-hidden">Open navigation menu</span>
+        </button>
+      </div>
+    </header>
+    <main class="content">
+      <section class="section container">
+        <div class="section__body">
+          <div class="hero">
+            <div class="hero__main">
+              <div class="hero__welcome">
+                <p>Welcome to the club</p>
+              </div>
+              <h1 class="hero__title">
+                Choose Your Programs,<br/> Pick Your Meal,<br/> Let’s Get Healthy.
+              </h1>
+              <div class="hero__description">
+                <p>
+                  StayHealty provides Online Training, and Consultation About
+                  Diet and Exercise tailored based on user needs. We will
+                  provide a training model that can be accessed anytime and
+                  anywhere with the best trainers.
+                </p>
+              </div>
+              <div class="hero__buttons">
+                <a
+                  href="#!"
+                  class="hero__button button"
+                  type="button"
+                  target="_blank"
+                  >Join now</a
+                >
+                <a
+                  href="#!"
+                  class="hero__button button button--transparent"
+                  type="button"
+                  target="_blank"
+                  >Contact Us</a
+                >
+              </div>
+              <div class="hero__video-wrapper">
+                <video
+                  class="hero__video"
+                  src=""
+                  width="1100" height="600"
+                  poster="./images/video-placeholder.jpg"
+                ></video>
+                <button
+                  class="hero__video-play-button"
+                  type="button"
+                >
+                  <img src="./images/icons/play.svg" alt="Play button" class="hero__video-play-icon" loading="lazy">              
+                </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <header class="section__header">
+          <h2 class="section__title">Programs</h2>
+          <div class="section__description">
+            <p>
+              We Have a programs to help your workouts
+            </p>
+          </div>
+        </header>
+        <div class="section__body">
+          <div class="swiper programs__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide programs__slide">
+                <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <div class="programs__slide-content">
+                  <h3 class="programs__slide-name">Full Body Workout</h3>
+                  <p class="programs__slide-author">By The Rock</p>
+                  <div class="programs__slide-description">
+                    <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                  </div>
+                  <a class="programs__slide-link" href="/" target="_blank">
+                    Check out this program!
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide programs__slide">
+                <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <div class="programs__slide-content">
+                  <h3 class="programs__slide-name">Full Body Workout</h3>
+                  <p class="programs__slide-author">By The Rock</p>
+                  <div class="programs__slide-description">
+                    <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                  </div>
+                  <a class="programs__slide-link" href="/" target="_blank">
+                    Check out this program!
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide programs__slide">
+                <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <div class="programs__slide-content">
+                  <h3 class="programs__slide-name">Full Body Workout</h3>
+                  <p class="programs__slide-author">By The Rock</p>
+                  <div class="programs__slide-description">
+                    <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                  </div>
+                  <a class="programs__slide-link" href="/" target="_blank">
+                    Check out this program!
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide programs__slide">
+                <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <div class="programs__slide-content">
+                  <h3 class="programs__slide-name">Full Body Workout</h3>
+                  <p class="programs__slide-author">By The Rock</p>
+                  <div class="programs__slide-description">
+                    <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                  </div>
+                  <a class="programs__slide-link" href="/" target="_blank">
+                    Check out this program!
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
+      <form class="mobile-overlay__close-button-wrapper" method="dialog">
+        <button class="mobile-overlay__close-button cross-button" type="submit">
+          <span class="visually-hidden">Сlose navigation menu</span>
+        </button>
+      </form>
+      <div class="mobile-overlay-body">
+        <ul class="mobile-overlay__list">
+          <li class="mobile-overlay__item">
+            <a href="#!" class="mobile-overlay__link">Home</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="#!" class="mobile-overlay__link">Program</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="#!" class="mobile-overlay__link">Nutritions</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="#!" class="mobile-overlay__link">Pricing</a>
+          </li>
+          <li class="mobile-overlay__item">
+            <a href="#!" class="mobile-overlay__link">About</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </body>
+</html>

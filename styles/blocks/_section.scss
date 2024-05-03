@@ -1,0 +1,41 @@
+.section {
+  &:not(:first-child) {
+    padding-block: var(--section-padding-y);
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    column-gap: 10px;
+    color: var(--color-dark);
+
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 25px;
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-weight: 600;
+    font-size: 40px;
+    max-width: 590px;
+    line-height: 150%;
+  }
+}

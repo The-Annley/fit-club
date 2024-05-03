@@ -1,0 +1,126 @@
+.hero {
+  padding-top: 55px;
+  padding-bottom: 50px;
+  background-color: var(--bg-color);
+
+  @include mobile {
+    padding-top: 15px;
+  }
+
+  @include mobile-s {
+    padding-bottom: 3px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 30px;
+    color: var(--color-light);
+
+    @include tablet {
+      row-gap: 20px;
+    }
+  }
+
+  &__welcome {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 150%;
+    text-transform: capitalize;
+
+    @include tablet {
+      font-size: 45px;
+      line-height: 130%;
+    }
+
+    @include mobile {
+      font-size: 40px;
+      line-height: 110%;
+    }
+
+    @include mobile-s {
+      font-size: 30px;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 200%;
+    text-transform: capitalize;
+    max-width: 689px;
+
+    @include tablet {
+      font-size: 14px;
+    }
+
+    @include mobile {
+      font-size: 13px;
+      line-height: 150%;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @include mobile {
+      column-gap: 15px;
+    }
+  }
+
+  &__button,
+  &__button--transparent {
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__video-wrapper {
+    position: relative;
+  }
+
+  &__video {
+    border-radius: var(--border-radius-small);
+    width: 100%;
+    max-width: 1110px;
+    height: auto;
+
+    &-play-button {
+      @include abs-center;
+      @include square(80px);
+      @include flex-center;
+
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 50%;
+      border: none;
+
+      @include hover {
+        background-color: var(--color-dark);
+      }
+
+      @include tablet {
+        @include square(60px);
+      }
+    }
+
+    &-play-icon {
+      @include tablet {
+        width: 30px;
+      }
+    }
+  }
+}
