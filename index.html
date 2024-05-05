@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/vendor.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <script defer src="./js/main.js" type="module"></script>
     <title>StayHealthy</title>
   </head>
   <body>
@@ -53,10 +52,10 @@
       </div>
     </header>
     <main class="content">
-      <section class="section container">
+      <section class="section">
         <div class="section__body">
           <div class="hero">
-            <div class="hero__main">
+            <div class="hero__main container">
               <div class="hero__welcome">
                 <p>Welcome to the club</p>
               </div>
@@ -114,8 +113,13 @@
           </div>
         </header>
         <div class="section__body">
-          <div class="swiper programs__slider">
-            <div class="swiper-wrapper">
+          <button class="programs__button programs__button--prev">
+            <svg width="19" height="33" viewBox="0 0 19 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5 5.25L7.25 16.5L18.5 27.75L16.25 32.25L0.499999 16.5L16.25 0.75L18.5 5.25Z" fill="black"/>
+            </svg>
+          </button>
+          <div class="swiper mySwiper programs__slider">
+            <div class="swiper-wrapper programs__wrapper">
               <div class="swiper-slide programs__slide">
                 <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
                 <div class="programs__slide-content">
@@ -123,6 +127,38 @@
                   <p class="programs__slide-author">By The Rock</p>
                   <div class="programs__slide-description">
                     <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                  </div>
+                  <a class="programs__slide-link" href="/" target="_blank">
+                    Check out this program!
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide programs__slide">
+                <img src="./images/training-women.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <div class="programs__slide-content">
+                  <h3 class="programs__slide-name">Bodyweight Workout</h3>
+                  <p class="programs__slide-author">By Timi Tarner</p>
+                  <div class="programs__slide-description">
+                    <p>No need equipments, just your body, your soul, and your spirit. You can do . . .</p>
+                  </div>
+                  <a class="programs__slide-link" href="/" target="_blank">
+                    Check out this program!
+                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M-0.000213134 7.83332L14.6548 7.83332L10.2439 12.2442L11.4223 13.4225L17.8448 6.99999L11.4223 0.577485L10.2439 1.75582L14.6548 6.16665L-0.000212989 6.16665L-0.000213134 7.83332Z" fill="#3043A9"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide programs__slide">
+                <img src="./images/training-men.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <div class="programs__slide-content">
+                  <h3 class="programs__slide-name">Dumbell Workout</h3>
+                  <p class="programs__slide-author">By Frank Jane</p>
+                  <div class="programs__slide-description">
+                    <p>This is a workout you can do at home just using a set of barbells. The workout is . . .</p>
                   </div>
                   <a class="programs__slide-link" href="/" target="_blank">
                     Check out this program!
@@ -149,12 +185,12 @@
                 </div>
               </div>
               <div class="swiper-slide programs__slide">
-                <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <img src="./images/training-women.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
                 <div class="programs__slide-content">
-                  <h3 class="programs__slide-name">Full Body Workout</h3>
-                  <p class="programs__slide-author">By The Rock</p>
+                  <h3 class="programs__slide-name">Bodyweight Workout</h3>
+                  <p class="programs__slide-author">By Timi Tarner</p>
                   <div class="programs__slide-description">
-                    <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                    <p>No need equipments, just your body, your soul, and your spirit. You can do . . .</p>
                   </div>
                   <a class="programs__slide-link" href="/" target="_blank">
                     Check out this program!
@@ -165,12 +201,12 @@
                 </div>
               </div>
               <div class="swiper-slide programs__slide">
-                <img src="./images/running-man.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
+                <img src="./images/training-men.jpg" alt="Program image" class="programs__slide-image" width="350" height="240" loading="lazy">
                 <div class="programs__slide-content">
-                  <h3 class="programs__slide-name">Full Body Workout</h3>
-                  <p class="programs__slide-author">By The Rock</p>
+                  <h3 class="programs__slide-name">Dumbell Workout</h3>
+                  <p class="programs__slide-author">By Frank Jane</p>
                   <div class="programs__slide-description">
-                    <p>You can do it in your own home, all in under 30 mins? just need a mat and som . . .</p>
+                    <p>This is a workout you can do at home just using a set of barbells. The workout is . . .</p>
                   </div>
                   <a class="programs__slide-link" href="/" target="_blank">
                     Check out this program!
@@ -179,6 +215,29 @@
                     </svg>
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+          <button class="programs__button programs__button--next">
+            <svg width="19" height="33" viewBox="0 0 19 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5 5.25L7.25 16.5L18.5 27.75L16.25 32.25L0.499999 16.5L16.25 0.75L18.5 5.25Z" fill="black"/>
+            </svg>                
+          </button>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="section__body">
+          <div class="nutritions">
+            <div class="nutritions__main">
+                <img src="./images/nutritions-image.jpg" alt="Trophy" class="nutritions__image" width="605" height="484" loading="lazy">
+              <div class="nutritions__body">
+                <p class="nutritions__welcome">Nutritions</p>
+                <h3 class="nutritions__title">Meal Preparation For Workout</h3>
+                <div class="nutritions__description">
+                  <p>Don’t worry we have the best nutritionist for your workout, firstly consult with our experts,
+                    we can make your meal preparation based on <strong>Total Daily Energy Expenditure.</strong></p>
+                </div>
+                <button class="nutritions__button button">Join Now</button>
               </div>
             </div>
           </div>
@@ -211,5 +270,7 @@
         </ul>
       </div>
     </dialog>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

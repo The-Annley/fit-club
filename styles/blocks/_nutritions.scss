@@ -1,0 +1,74 @@
+.nutritions {
+  display: flex;
+  flex-direction: column;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 10px;
+
+    @include mobile {
+      row-gap: 5px;
+    }
+  }
+
+  &__welcome {
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 445px;
+    line-height: 1.5;
+
+    @include desktop {
+      font-size: 35px;
+      line-height: 130%;
+    }
+
+    @include tablet {
+      font-size: 30px;
+      line-height: 120%;
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    max-width: 445px;
+    font-weight: 300;
+    margin-bottom: 20px;
+
+    @include desktop {
+      font-size: 13px;
+    }
+
+    @include tablet {
+      font-size: 12px;
+    }
+  }
+
+  &__image {
+    @include tablet {
+      max-width: 40%;
+      height: auto;
+    }
+
+    @include mobile {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

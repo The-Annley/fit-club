@@ -1,4 +1,14 @@
+.section__body {
+  position: relative;
+}
+
 .programs {
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__slide {
     max-width: 350px;
 
@@ -32,5 +42,46 @@
       font-size: 14px;
       line-height: 20px;
     }
+
+    &-image {
+      object-fit: cover;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+
+  &__button {
+    @include reset-button;
+
+    position: absolute;
+    top: 50%;
+    margin-top: -12.5px;
+    z-index: 2;
+    cursor: pointer;
+
+    &--prev {
+      left: -12.5px;
+    }
+
+    &--next {
+      rotate: -180deg;
+      right: -12.5px;
+    }
+  }
+}
+
+.swiper {
+  &-pagination {
+    width: inherit;
+  }
+
+  &-button-disabled {
+    opacity: 0.4;
+    cursor: default;
   }
 }

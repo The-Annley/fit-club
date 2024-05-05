@@ -1,6 +1,10 @@
 .section {
   &:not(:first-child) {
     padding-block: var(--section-padding-y);
+
+    @include tablet {
+      padding-block: 30px;
+    }
   }
 
   &__header {
@@ -37,5 +41,10 @@
     font-size: 40px;
     max-width: 590px;
     line-height: 150%;
+
+    @include mobile {
+      line-height: 130%;
+      font-size: 30px;
+    }
   }
 }

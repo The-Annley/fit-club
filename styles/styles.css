@@ -484,6 +484,11 @@ h4,
 .section:not(:first-child) {
   padding-block: var(--section-padding-y);
 }
+@media (max-width: 1023px) {
+  .section:not(:first-child) {
+    padding-block: 30px;
+  }
+}
 .section__header {
   display: flex;
   align-items: center;
@@ -516,6 +521,12 @@ h4,
   font-size: 40px;
   max-width: 590px;
   line-height: 150%;
+}
+@media (max-width: 767px) {
+  .section__description {
+    line-height: 130%;
+    font-size: 30px;
+  }
 }
 
 .hero {
@@ -659,6 +670,15 @@ h4,
   }
 }
 
+.section__body {
+  position: relative;
+}
+
+.programs__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .programs__slide {
   max-width: 350px;
 }
@@ -689,4 +709,116 @@ h4,
        column-gap: 10px;
   font-size: 14px;
   line-height: 20px;
+}
+.programs__slide-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.programs__wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+.programs__button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -12.5px;
+  z-index: 2;
+  cursor: pointer;
+}
+.programs__button--prev {
+  left: -12.5px;
+}
+.programs__button--next {
+  rotate: -180deg;
+  right: -12.5px;
+}
+
+.swiper-pagination {
+  width: inherit;
+}
+.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.nutritions {
+  display: flex;
+  flex-direction: column;
+}
+.nutritions__main {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+@media (max-width: 767px) {
+  .nutritions__main {
+    flex-direction: column;
+  }
+}
+.nutritions__body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 10px;
+}
+@media (max-width: 767px) {
+  .nutritions__body {
+    row-gap: 5px;
+  }
+}
+.nutritions__welcome {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.nutritions__title {
+  font-size: 40px;
+  font-weight: 600;
+  max-width: 445px;
+  line-height: 1.5;
+}
+@media (max-width: 1280px) {
+  .nutritions__title {
+    font-size: 35px;
+    line-height: 130%;
+  }
+}
+@media (max-width: 1023px) {
+  .nutritions__title {
+    font-size: 30px;
+    line-height: 120%;
+  }
+}
+.nutritions__description {
+  font-size: 15px;
+  max-width: 445px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+@media (max-width: 1280px) {
+  .nutritions__description {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1023px) {
+  .nutritions__description {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1023px) {
+  .nutritions__image {
+    max-width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .nutritions__image {
+    width: 100%;
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
