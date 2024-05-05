@@ -5,3 +5,4 @@
 3. Написан по методологии [БЭМ](https://ru.bem.info/methodology/).
 4. Испытал библиотеку [Swiper.js](https://swiperjs.com/)
 ### На этом всё! Спасибо за просмотр моего проекта :)
+Посмотреть сайт можно по ссылке: https://the-annley.github.io/fit-club/
